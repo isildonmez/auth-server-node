@@ -1,5 +1,4 @@
-const connectionUrl = process.env.MONGO_URL
-console.log(connectionUrl);
-
+var config = require('./config');
 var mongoose = require('mongoose');
-mongoose.connect(connectionUrl, {});
+
+mongoose.connect(config.url, {});

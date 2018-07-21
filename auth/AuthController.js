@@ -4,6 +4,7 @@ var bodyParser = require('body-parser');
 router.use(bodyParser.urlencoded({ extended: false }));
 router.use(bodyParser.json());
 var User = require('../user/User');
+var VerifyToken = require('./VerifyToken');
 
 var jwt = require('jsonwebtoken');
 var bcrypt = require('bcryptjs');
